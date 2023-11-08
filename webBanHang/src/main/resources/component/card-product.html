@@ -1,0 +1,27 @@
+<a href="/product/1" th:fragment="cardProduct (product)">
+    <div class="product">
+        <div class="background" style="background: linear-gradient(to right, #ffffff, #b58f8f)"></div>
+        <img class="image zoom"
+             src="https://static.wixstatic.com/media/2cd43b_8ba844fdf6e048f6ad77f6a3c71fe22d~mv2.png/v1/fill/w_320,h_245,q_90/2cd43b_8ba844fdf6e048f6ad77f6a3c71fe22d~mv2.png"
+             alt="">
+        <div th:text="${product.productName}" class="fs-5 fw-bold">Acer Aspire E5-511</div>
+        <button class="btn btn-sm btn-light rounded-pill d-flex align-items-center my-3">
+            Acer
+            <img class="logo ms-2" src="https://acer.bankbuddy.me/webchat/images/acer_logo.png" alt="">
+        </button>
+        <p class="text-gray limit-3-line my-4" data-bs-toggle="tooltip"
+           title="Tuy là một chiếc máy tính xách tay giá rẻ nhưng Acer E5 511 là chiếc laptop có thiết kế bền vững, màn hình 15,6 inch rộng lớn cho bạn không gian thoải mái ...">
+            Tuy là một chiếc máy tính xách tay giá rẻ nhưng Acer E5 511 là chiếc laptop có thiết kế bền
+            vững, màn hình 15,6 inch rộng lớn cho bạn không gian thoải mái ...</p>
+        <div class="my-2">
+            <del>
+                8.400.000 <span>đ</span>
+            </del>
+            <span class="badge bg-danger fw-normal ms-2">Giảm 20%</span>
+        </div>
+        <button type="button" class="btn btn-price w-100 text-white mt-2">
+            <i class="fa-solid fa-cart-shopping me-2"></i>
+            <span>7.200.000 đ</span>
+        </button>
+    </div>
+</a>

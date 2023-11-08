@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="@{saveimage}" method="post" enctype="multipart/form-data">
+        ParentId: <input type="text" name="ParentId"><br>
+        orderBy: <input type="text" name="orderBy"><br>
+        statusId: <input type="text" name="statusId"><br>
+        imageType: <input type="text" name="imageType"><br>
+        <input type="file" name="imageFile">
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/app.css">
+    <!--    icon awesome 6-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="component">
+        <div class="row">
+            <div class="col-4">
+                <div class="fw-bold fs-5">Bộ lọc</div>
+                <div class="my-4">
+                    <div class="my-2">
+                        <div class="fw-bold fs-6">Danh mục</div>
+                        <a href="/products">
+                            Sản phẩm
+                        </a>
+                        <a href="/combo">
+                            Combo sản phẩm
+                        </a>
+                    </div>
+                    <div class="my-2">
+                        <div class="fw-bold fs-6">Nhãn hiệu</div>
+                        <button class="btn btn-sm btn-light rounded-pill d-flex align-items-center my-3">
+                            Acer
+                            <img class="logo ms-2" src="https://acer.bankbuddy.me/webchat/images/acer_logo.png" alt="">
+                        </button>
+                        <button class="btn btn-sm btn-light rounded-pill d-flex align-items-center my-3">
+                            Acer
+                            <img class="logo ms-2" src="https://acer.bankbuddy.me/webchat/images/acer_logo.png" alt="">
+                        </button>
+                    </div>
+                    <div class="my-2">
+                        <div class="fw-bold fs-6">
+                            Sắp xếp theo
+                        </div>
+                        <button class="btn btn-sm btn-light rounded-pill d-flex align-items-center my-3">
+                            Acer
+                            <img class="logo ms-2" src="https://acer.bankbuddy.me/webchat/images/acer_logo.png" alt="">
+                        </button>
+                        <button class="btn btn-sm btn-light rounded-pill d-flex align-items-center my-3">
+                            Acer
+                            <img class="logo ms-2" src="https://acer.bankbuddy.me/webchat/images/acer_logo.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">Sản phẩm</div>
+            <div class="row my-4">
+                <th:block th:each="i: ${#numbers.sequence(1, 5)}">
+                    <div class="col-xl-4 col-sm-6">
+                        <div th:insert="../component/card-product"></div>
+                    </div>
+                </th:block>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>
